@@ -34,13 +34,13 @@ public class BookServiceImp implements BookService {
 
    @Transactional
    @Override
-   public void update(long id, Book book) {
+   public void update(Integer id, Book book) {
       bookDao.update(id, book);
    }
 
    @Transactional
    @Override
-   public void delete(long id) {
+   public void delete(Integer id) {
       bookDao.delete(id);
    }
 }

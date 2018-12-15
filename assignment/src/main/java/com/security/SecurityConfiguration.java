@@ -31,6 +31,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         .antMatchers(HttpMethod.POST, "/**").hasRole("ADMIN")
         .antMatchers(HttpMethod.GET, "/**").hasRole("ADMIN")
         .antMatchers(HttpMethod.DELETE, "/**").hasRole("ADMIN")
+        .antMatchers(HttpMethod.PUT, "/**").hasRole("ADMIN")
         .and().httpBasic().realmName(REALM).authenticationEntryPoint(getBasicAuthEntryPoint())
         .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);//We don't need sessions to be created.
     }

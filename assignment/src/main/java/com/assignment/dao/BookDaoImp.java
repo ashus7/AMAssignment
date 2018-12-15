@@ -40,7 +40,7 @@ public class BookDaoImp implements BookDao {
 	   }
 
 	@Override
-	   public void update(long id, Book book) {
+	   public void update(Integer id, Book book) {
 	      Session session = sessionFactory.getCurrentSession();
 	      Book book2 = session.byId(Book.class).load(id);
 	      book2.setTitle(book.getTitle());
@@ -49,7 +49,7 @@ public class BookDaoImp implements BookDao {
 	   }
 
 	@Override
-	   public void delete(long id) {
+	   public void delete(Integer id) {
 	      Session session = sessionFactory.getCurrentSession();
 	      Book book = session.byId(Book.class).load(id);
 	      session.delete(book);

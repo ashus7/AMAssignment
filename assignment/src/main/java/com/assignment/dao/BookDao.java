@@ -9,7 +9,7 @@ public interface BookDao {
 	   long save(Book book);
 	   Book get(Integer id);
 	   List<Book> list();
-	   void update(long id, Book book);
-	   void delete(long id);
+	   void update(Integer id, Book book);
+	   void delete(Integer id);
 
 }
