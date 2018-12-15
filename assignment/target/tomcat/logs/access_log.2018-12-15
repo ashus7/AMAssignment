@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [15/Dec/2018:19:41:38 +0530] "GET /assignment/book HTTP/1.1" 200 207 http-bio-8080-exec-2 1372
+0:0:0:0:0:0:0:1 - - [15/Dec/2018:19:42:18 +0530] "GET /assignment/book/1 HTTP/1.1" 200 72 http-bio-8080-exec-3 1152
+0:0:0:0:0:0:0:1 - - [15/Dec/2018:19:54:08 +0530] "GET /assignment/book/1 HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [15/Dec/2018:19:54:19 +0530] "GET /assignment/book/1 HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [15/Dec/2018:19:54:25 +0530] "GET /assignment/book HTTP/1.1" 404 - http-bio-8080-exec-4 0
